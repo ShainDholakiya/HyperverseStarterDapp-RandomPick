@@ -1,6 +1,6 @@
 import Card from "./Card";
 import { useEffect, useState } from "react";
-import cardsData from "../data";
+import cardsData from "../../data";
 
 const MemoryGame = () => {
   const [cards, setCards] = useState<
