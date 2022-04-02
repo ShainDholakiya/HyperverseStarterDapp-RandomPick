@@ -1,6 +1,7 @@
 import { useEthereum } from "@decentology/hyperverse-ethereum";
 import { useRandomPick } from "@decentology/hyperverse-ethereum-randompick";
 import Head from "next/head";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import MemoryGame from "./components/MemoryGame";
 import Nav from "./components/Nav";
@@ -88,7 +89,7 @@ const RandomNFT = () => {
         )}
         {winner ? (
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img
+            <Image
               className="w-full"
               src={winner.image_preview_url}
               alt="Sunset in the mountains"
